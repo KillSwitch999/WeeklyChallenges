@@ -1,30 +1,62 @@
 {
   "version": 3,
   "targets": {
-    "net9.0": {}
+    "net9.0": {
+      "xunit.assert/2.4.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/xunit.assert.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/xunit.assert.dll": {
+            "related": ".xml"
+          }
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "xunit.assert/2.4.0": {
+      "sha512": "Swvkm6iTjZr8TiUj5vMnmfG+2dD4s/BIBgsVOzTxxmoq2ndGsmM2WIL4wuqJ8RhxydWIDOPpIaaytjT2pMTEdg==",
+      "type": "package",
+      "path": "xunit.assert/2.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard1.1/xunit.assert.dll",
+        "lib/netstandard1.1/xunit.assert.xml",
+        "lib/netstandard2.0/xunit.assert.dll",
+        "lib/netstandard2.0/xunit.assert.xml",
+        "xunit.assert.2.4.0.nupkg.sha512",
+        "xunit.assert.nuspec"
+      ]
+    }
+  },
   "projectFileDependencyGroups": {
-    "net9.0": []
+    "net9.0": [
+      "xunit.assert >= 2.4.0"
+    ]
   },
   "packageFolders": {
-    "C:\\Users\\Harpe\\.nuget\\packages\\": {},
+    "C:\\Users\\ggouv\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Harpe\\Desktop\\NET9\\WeeklyChallenges\\ChallengesWithTestsMark8\\ChallengesWithTestsMark8.csproj",
+      "projectUniqueName": "C:\\Users\\ggouv\\repos\\WeeklyChallenges\\ChallengesWithTestsMark8\\ChallengesWithTestsMark8.csproj",
       "projectName": "ChallengesWithTestsMark8",
-      "projectPath": "C:\\Users\\Harpe\\Desktop\\NET9\\WeeklyChallenges\\ChallengesWithTestsMark8\\ChallengesWithTestsMark8.csproj",
-      "packagesPath": "C:\\Users\\Harpe\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Harpe\\Desktop\\NET9\\WeeklyChallenges\\ChallengesWithTestsMark8\\obj\\",
+      "projectPath": "C:\\Users\\ggouv\\repos\\WeeklyChallenges\\ChallengesWithTestsMark8\\ChallengesWithTestsMark8.csproj",
+      "packagesPath": "C:\\Users\\ggouv\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ggouv\\repos\\WeeklyChallenges\\ChallengesWithTestsMark8\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Harpe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ggouv\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -33,6 +65,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -51,11 +84,17 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.100"
+      "SdkAnalysisLevel": "9.0.300"
     },
     "frameworks": {
       "net9.0": {
         "targetAlias": "net9.0",
+        "dependencies": {
+          "xunit.assert": {
+            "target": "Package",
+            "version": "[2.4.0, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",
@@ -72,7 +111,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
