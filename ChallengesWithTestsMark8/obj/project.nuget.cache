@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "xSim0DdubZg=",
+  "dgSpecHash": "/EyjuRdSU7s=",
   "success": true,
-  "projectFilePath": "C:\\Users\\ggouv\\repos\\WeeklyChallenges\\ChallengesWithTestsMark8\\ChallengesWithTestsMark8.csproj",
+  "projectFilePath": "/Users/ggouv/repos/WeeklyChallenges/ChallengesWithTestsMark8/ChallengesWithTestsMark8.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\ggouv\\.nuget\\packages\\xunit.assert\\2.4.0\\xunit.assert.2.4.0.nupkg.sha512"
+    "/Users/ggouv/.nuget/packages/xunit.assert/2.4.0/xunit.assert.2.4.0.nupkg.sha512"
   ],
   "logs": []
 }
